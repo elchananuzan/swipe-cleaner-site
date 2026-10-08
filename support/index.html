@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swipe Cleaner Support</title>
+<meta name="description" content="Help and contact for Swipe Cleaner, the iPhone app that shows your photos and videos by size.">
+<style>
+  :root { color-scheme: light dark; --ink: #1c1c1e; --ink2: #555; --bg: #fff; --rule: #e5e5ea; --accent: #1f9d55; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f2f2f7; --ink2: #aeaeb2; --bg: #0d0d0f; --rule: #2c2c2e; --accent: #34d677; } }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  .meta { color: var(--ink2); margin: 0 0 24px; }
+  ol, ul { padding-left: 22px; }
+  a { color: var(--accent); }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--ink2); font-size: 15px; }
+  form.contact { display: grid; gap: 12px; margin-top: 8px; }
+  form.contact input, form.contact textarea { width: 100%; box-sizing: border-box; font: inherit; padding: 10px 12px; border: 1px solid var(--rule); border-radius: 10px; background: transparent; color: var(--ink); }
+  form.contact button { justify-self: start; font: inherit; font-weight: 600; padding: 10px 22px; border: 0; border-radius: 10px; background: var(--accent); color: #fff; cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Swipe Cleaner Support</h1>
+  <p class="meta">Help for the iPhone app. Questions? Use the <a href="#contact">contact form</a> below.</p>
+
+  <h2>How it works</h2>
+  <p>Swipe Cleaner shows your photos and videos one at a time, biggest first, with the size of each. Swipe left (or tap Bin) to set an item aside, swipe right (or tap Keep) to keep it. Nothing is deleted while you swipe. When you are ready, open the bin, check what is in it, and tap Delete. iOS asks you to confirm.</p>
+
+  <h2>I deleted items but my storage did not go down</h2>
+  <p>iPhone keeps deleted items in Recently Deleted for 30 days. The space comes back once Recently Deleted is emptied. No app is allowed to empty it for you.</p>
+  <p>On iOS 18 and later:</p>
+  <ol>
+    <li>Open Photos and scroll down to Utilities.</li>
+    <li>Tap Recently Deleted and unlock it with Face ID or your passcode.</li>
+    <li>Tap Select, then Delete All.</li>
+  </ol>
+  <p>On iOS 17: open Photos, tap Albums, scroll to Recently Deleted, tap Select, then Delete All.</p>
+
+  <h2>What does "frees iCloud space" mean?</h2>
+  <p>If you use iCloud Photos with Optimize iPhone Storage, some originals live only in iCloud. Deleting those frees space in your iCloud storage rather than on the iPhone itself. The app marks them with a cloud symbol.</p>
+
+  <h2>The app only shows some of my photos</h2>
+  <p>You may have given access to selected photos only. Tap "Add more" at the top of the swipe screen, or go to Settings › Privacy &amp; Security › Photos › Swipe Cleaner and choose Full Access.</p>
+
+  <h2>Photo access is off</h2>
+  <p>Open the iPhone Settings app, go to Privacy &amp; Security › Photos › Swipe Cleaner, and choose Full Access. Then come back to the app.</p>
+
+  <h2>Pricing</h2>
+  <ul>
+    <li>Swiping, sorting and the bin are free, with no ads.</li>
+    <li>Your first 1 GB of deleting is free.</li>
+    <li>Pro removes the limit: yearly with a 7-day free trial, or a one-time lifetime purchase. Prices are shown in the app in your currency.</li>
+  </ul>
+  <p>If a bin is bigger than what is left of the free 1 GB, the app offers to delete the largest items that fit for free and leave the rest in the bin.</p>
+
+  <h2>Restore, manage or cancel Pro</h2>
+  <p>To restore a purchase on a new iPhone, open the app's Settings and tap Restore purchase. To manage or cancel the subscription, open the iPhone Settings app, tap your name, then Subscriptions. Cancel at least 24 hours before the period ends to avoid renewal. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <h2>Privacy</h2>
+  <p>No data is collected and your photos never leave your iPhone. Read the <a href="../privacy/">privacy policy</a>.</p>
+
+  <h2 id="contact">Contact</h2>
+  <form action="https://formspree.io/f/mqabjpey" method="POST" class="contact">
+    <input type="hidden" name="_subject" value="Swipe Cleaner support">
+    <input type="hidden" name="app" value="Swipe Cleaner">
+    <label>Your email<br><input type="email" name="email" required autocomplete="email"></label>
+    <label>Message<br><textarea name="message" rows="5" required placeholder="Your iPhone model and iOS version help if something is not working."></textarea></label>
+    <button type="submit">Send</button>
+  </form>
+
+  <footer>Swipe Cleaner · <a href="../privacy/">Privacy policy</a></footer>
+</main>
+</body>
+</html>
