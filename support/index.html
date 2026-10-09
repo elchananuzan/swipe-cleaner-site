@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swipe Cleaner Support</title>
-<meta name="description" content="Help and contact for Swipe Cleaner, the iPhone app that shows your photos and videos by size.">
+<title>Camera Roll Cleaner Support</title>
+<meta name="description" content="Help and contact for Camera Roll Cleaner, the iPhone app that shows your photos and videos by size.">
 <style>
   :root { color-scheme: light dark; --ink: #1c1c1e; --ink2: #555; --bg: #fff; --rule: #e5e5ea; --accent: #1f9d55; }
   @media (prefers-color-scheme: dark) { :root { --ink: #f2f2f7; --ink2: #aeaeb2; --bg: #0d0d0f; --rule: #2c2c2e; --accent: #34d677; } }
@@ -23,38 +23,41 @@
 </head>
 <body>
 <main>
-  <h1>Swipe Cleaner Support</h1>
+  <h1>Camera Roll Cleaner Support</h1>
   <p class="meta">Help for the iPhone app. Questions? Use the <a href="#contact">contact form</a> below.</p>
 
   <h2>How it works</h2>
-  <p>Swipe Cleaner shows your photos and videos one at a time, biggest first, with the size of each. Swipe left (or tap Bin) to set an item aside, swipe right (or tap Keep) to keep it. Nothing is deleted while you swipe. When you are ready, open the bin, check what is in it, and tap Delete. iOS asks you to confirm.</p>
+  <p>Camera Roll Cleaner shows your photos and videos one at a time, biggest first, with the size of each. Swipe left (or tap Bin) to put an item in the bin, swipe right (or tap Keep) to keep it. Nothing is deleted while you swipe. When you are ready, open the bin, check what is in it, and tap Delete. iOS asks you to confirm.</p>
 
   <h2>I deleted items but my storage did not go down</h2>
-  <p>iPhone keeps deleted items in Recently Deleted for 30 days. The space comes back once Recently Deleted is emptied. No app is allowed to empty it for you.</p>
-  <p>On iOS 18 and later:</p>
+  <p>iPhone keeps deleted items in Recently Deleted for 30 days, then removes them for good. You can simply wait. No app is allowed to empty Recently Deleted for you. To get the space back today:</p>
   <ol>
-    <li>Open Photos and scroll down to Utilities.</li>
+    <li>Open Photos. On iOS 26, tap Collections, then scroll to Utilities. On iOS 18, scroll down to Utilities. On iOS 17, tap Albums and scroll down.</li>
     <li>Tap Recently Deleted and unlock it with Face ID or your passcode.</li>
-    <li>Tap Select, then Delete All.</li>
+    <li>Tap Select, choose the items you deleted with Camera Roll Cleaner (the newest, at the top), then tap Delete.</li>
   </ol>
-  <p>On iOS 17: open Photos, tap Albums, scroll to Recently Deleted, tap Select, then Delete All.</p>
+  <p><strong>Do not tap Delete All.</strong> It also erases everything else in Recently Deleted, including things you may have deleted by mistake in Photos or other apps, and that cannot be undone.</p>
 
   <h2>What does "frees iCloud space" mean?</h2>
-  <p>If you use iCloud Photos with Optimize iPhone Storage, some originals live only in iCloud. Deleting those frees space in your iCloud storage rather than on the iPhone itself. The app marks them with a cloud symbol.</p>
+  <p>If you use iCloud Photos with Optimize iPhone Storage, some originals live only in iCloud. Deleting those frees space in your iCloud storage rather than on the iPhone itself. The app marks them with a cloud symbol, and the bin shows how much of its total is in iCloud.</p>
+
+  <h2>Why does a size say "≈"?</h2>
+  <p>Sizes are read from the photo library on your iPhone. When iOS reports no size for an item, the app estimates it from the item's resolution and length and marks it with "≈".</p>
 
   <h2>The app only shows some of my photos</h2>
-  <p>You may have given access to selected photos only. Tap "Add more" at the top of the swipe screen, or go to Settings › Privacy &amp; Security › Photos › Swipe Cleaner and choose Full Access.</p>
+  <p>You may have given access to selected photos only. Tap "Add more" at the top of the swipe screen, or go to Settings › Privacy &amp; Security › Photos › Roll Cleaner and choose Full Access.</p>
 
   <h2>Photo access is off</h2>
-  <p>Open the iPhone Settings app, go to Privacy &amp; Security › Photos › Swipe Cleaner, and choose Full Access. Then come back to the app.</p>
+  <p>Open the iPhone Settings app, go to Privacy &amp; Security › Photos › Roll Cleaner, and choose Full Access. Then come back to the app.</p>
 
   <h2>Pricing</h2>
   <ul>
     <li>Swiping, sorting and the bin are free, with no ads.</li>
-    <li>Your first 1 GB of deleting is free.</li>
-    <li>Pro removes the limit: yearly with a 7-day free trial, or a one-time lifetime purchase. Prices are shown in the app in your currency.</li>
+    <li>3 free deletes, any size. Each time you empty the bin counts as one delete, however much is in it. If you cancel the iOS confirmation, it does not count.</li>
+    <li>Pro gives unlimited deletes: yearly with a 7-day free trial, or a one-time lifetime purchase. Prices are shown in the app in your currency.</li>
   </ul>
-  <p>If a bin is bigger than what is left of the free 1 GB, the app offers to delete the largest items that fit for free and leave the rest in the bin.</p>
+  <p>The bin shows how many free deletes you have left. After the third, the app shows Pro when you tap Delete; your bin stays as it is.</p>
+  <p>If you start the free trial, iOS asks whether the app may remind you 2 days before the trial ends. That is optional.</p>
 
   <h2>Restore, manage or cancel Pro</h2>
   <p>To restore a purchase on a new iPhone, open the app's Settings and tap Restore purchase. To manage or cancel the subscription, open the iPhone Settings app, tap your name, then Subscriptions. Cancel at least 24 hours before the period ends to avoid renewal. Refunds are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
@@ -64,14 +67,14 @@
 
   <h2 id="contact">Contact</h2>
   <form action="https://formspree.io/f/mqabjpey" method="POST" class="contact">
-    <input type="hidden" name="_subject" value="Swipe Cleaner support">
-    <input type="hidden" name="app" value="Swipe Cleaner">
+    <input type="hidden" name="_subject" value="Camera Roll Cleaner support">
+    <input type="hidden" name="app" value="Camera Roll Cleaner">
     <label>Your email<br><input type="email" name="email" required autocomplete="email"></label>
     <label>Message<br><textarea name="message" rows="5" required placeholder="Your iPhone model and iOS version help if something is not working."></textarea></label>
     <button type="submit">Send</button>
   </form>
 
-  <footer>Swipe Cleaner · <a href="../privacy/">Privacy policy</a></footer>
+  <footer>Camera Roll Cleaner · <a href="../privacy/">Privacy policy</a></footer>
 </main>
 </body>
 </html>
